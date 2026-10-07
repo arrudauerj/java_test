@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de JavaScript</title>
+<link rel="stylesheet" href="style.css">
+<head> 
+<body>
+    <header>
+        <h1>Laboratório de JavaScript</h1>
+        <p>Use os controles para testar os comandos.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Saudação</h2>
+
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome">
+            <button id="botao-saudacao" type="button">Saudar</button>
+
+            <!-- aria-live faz leitores de tela anunciarem a mudança -->
+            <p id="saida-saudacao" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>Verificar nota</h2>
+
+            <label for="nota">Digite uma nota de 0 a 10:</label>
+            <input type="number" id="nota" min="0" max="10" step="0.1">
+            <button id="botao-nota" type="button">Verificar</button>
+
+            <p id="saida-nota" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>Lista de conteúdos</h2>
+            <button id="botao-listar" type="button">Mostrar conteúdos</button>
+            <ul id="lista-conteudos"></ul>
+        </section>
+    </main>
+
+    <!-- O JavaScript é carregado depois dos elementos usados pelo programa -->
+    <script src="script.js"></script>
+</body>
+</html>
